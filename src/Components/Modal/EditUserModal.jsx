@@ -67,11 +67,11 @@ const EditUserModal = () => {
           >
             <Form>
               <div>
-                <Field name="firstName" label="First Name" as={TextField} />
+                <Field name="firstName" label="First Name" as={TextField} id="outlined-basic"  variant="outlined" margin="dense" />
                 <ErrorMessage name="firstName" component="div" />
               </div>
               <div>
-                <Field name="lastName" label="Last Name" as={TextField} />
+                <Field name="lastName" label="Last Name" as={TextField} id="outlined-basic"  variant="outlined" margin="dense" />
                 <ErrorMessage name="lastName" component="div" />
               </div>
               <div>
@@ -79,10 +79,11 @@ const EditUserModal = () => {
                   name="employeeType"
                   label="Employee Type"
                   as={TextField}
+                  id="outlined-basic"  variant="outlined" margin="dense"
                 />
                 <ErrorMessage name="employeeType" component="div" />
               </div>
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" variant="contained" color="primary" margin="dense">
                 submit
               </Button>
             </Form>
