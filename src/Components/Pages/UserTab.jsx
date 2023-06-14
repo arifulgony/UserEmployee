@@ -29,7 +29,7 @@ const style = {
   p: 4,
 };
 
-const UserList = () => {
+const UserTab = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const UserList = () => {
   const handleClose = () => setOpen(false);
 
 
-
+  const adminUsers = users.filter((user) => user.employeeType === "Admin");
   return (
     <div>
       <Typography variant="h5" component="h2" gutterBottom>
@@ -96,7 +96,7 @@ const UserList = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {users.map((user) => (
+            {adminUsers.map((user) => (
               <TableRow key={user.empID}>
                 <TableCell>{user.empID}</TableCell>
                 <TableCell>{user.firstName}</TableCell>
@@ -121,4 +121,4 @@ const UserList = () => {
   );
 };
 
-export default UserList;
+export default UserTab;

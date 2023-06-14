@@ -52,7 +52,7 @@ const EmployeeTab = () => {
 
 
 
-
+  const employeesUser = employees.filter((user) => user.employeeType === "Employee");
   return (
     <div>
       <Typography variant="h5" component="h2" gutterBottom>
@@ -98,7 +98,7 @@ const EmployeeTab = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {employees.map((employee) => (
+            {employeesUser.map((employee) => (
               <TableRow key={employee.empID}>
                 <TableCell>{employee.empID}</TableCell>
                 <TableCell>{employee.firstName}</TableCell>
