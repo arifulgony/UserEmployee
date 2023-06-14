@@ -58,7 +58,7 @@ const EmployeeTab = () => {
       <Typography variant="h5" component="h2" gutterBottom>
         Employee List
       </Typography>
-      <Button onClick={handleOpen} variant="contained">
+      <Button onClick={handleOpen} variant="contained" color="primary">
         Add User
       </Button>
       <Modal
