@@ -38,6 +38,7 @@ const EditUserModal = () => {
       )
       .then((response) => {
         console.log("User updated successfully:", response.data);
+        alert("Success");
 
       })
       .catch((error) => {

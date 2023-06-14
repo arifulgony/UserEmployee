@@ -60,6 +60,7 @@ const CreateUserForm = () => {
       .post("http://59.152.62.177:8085/api/Employee/SaveEmployeeInformation", data)
       .then((response) => {
         console.log(response.data);
+        alert("Success");
       })
       .catch((error) => {
         console.error(error);
